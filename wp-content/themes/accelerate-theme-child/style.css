@@ -22,6 +22,27 @@
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
+
+#masthead #primary-navigation a {
+	text-transform: uppercase;
+}
+ul#menu-top-nav li {
+	display:inline;
+	margin-left:20px;
+	
+
+}
+.home-page {
+	margin-bottom: 40px;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
 /* home page most recent blog */
 .blog-post {
 	width: 50%;
@@ -45,3 +66,54 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+/* home page featured work */
+
+.featured-work h4 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom:30px;
+}
+.homepage-featured-work li {
+	list-style-type: none;
+	width:33.3333%;
+	float:left;
+	margin-bottom: 50px;
+}
+.homepage-featured-work h5 {
+	text-align: center;
+	margin-top:20px;
+}
+/* case study page */
+aside.case-study-sidebar {
+	float:left;
+	width:30%;
+	margin-top:40px;
+}
+.case-study-sidebar h2{
+	font-weight: normal;
+}
+.case-study-sidebar h5{
+	font-size:14px;
+	font-weight: normal;
+	margin-top:10px;
+	color:#DDD;
+}
+.case-study-sidebar h4{
+	font-size:16px;
+	font-weight: normal;
+	margin-top:10px;
+	margin-bottom: 20px;
+}
+.case-study-sidebar a {
+	font-weight: bold;
+}
+.case-study-images {
+	float:right;
+	width:70%;
+	text-align:right;
+	margin-top:40px;
+}
+.case-study-images img {
+	margin-bottom:50px;
+}
+
