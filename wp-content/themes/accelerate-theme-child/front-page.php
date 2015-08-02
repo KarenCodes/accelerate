@@ -36,7 +36,9 @@ get_header(); ?>
 			<li>
 				<figure>
 				<?php if($image_1) { ?>
+					<a href="<?php the_permalink(); ?>">
 					<?php echo wp_get_attachment_image( $image_1, $size ); ?>
+					</a>
 				<?php } ?>
 				</figure>
 				<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
