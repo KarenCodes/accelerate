@@ -28,9 +28,7 @@
 }
 ul#menu-top-nav li {
 	display:inline;
-	margin-left:20px;
-	
-
+	margin-left:30px;
 }
 .home-page {
 	margin-bottom: 40px;
@@ -116,4 +114,27 @@ aside.case-study-sidebar {
 .case-study-images img {
 	margin-bottom:50px;
 }
+/* Contact Form */
+.page-id-47349 #content {
+	padding-left:150px;
+	padding-right:150px;
+}
+.ninja-forms-form-wrap label {
+    font-weight: normal!important;
+    font-size:15px;
+}
+.contact-name-wrap {
+	float:left;
+	width:49%;
+}
 
+.contact-email-wrap {
+	float:right;
+	width:49%;
+}
+.contact-button {
+	float:right;
+	background: #45ac9d;
+	color:white;
+	padding: 15px 75px;
+}
