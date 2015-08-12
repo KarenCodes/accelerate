@@ -48,6 +48,30 @@ get_header(); ?>
 		</ul>
 	</div>
 </section>
+<section class="our-services">
+	<div class="site-content">
+ 		<h4>Our Services</h4>
+ 		<ul class="homepage-our-services">
+		<?php query_posts('posts_per_page=4&post_type=our_services'); ?>
+			<?php while ( have_posts() ) : the_post(); 	
+				$image = get_field("image"); 
+				$size="medium"
+			?>
+			<li>
+				<figure>
+				<?php if($image) { ?>
+					<a href="<?php the_permalink(); ?>">
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+					</a>
+				<?php } ?>
+				</figure>
+				<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+			</li>
+			<?php endwhile; // end of the loop. ?>
+			<?php wp_reset_query(); // resets the altered query back to the original ?>
+		</ul>
+	</div>
+</section>
 <section class="recent-posts">
 	<div class="site-content">
  		<div class="blog-post">
@@ -60,6 +84,13 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
 		</div>
+		<?php if ( is_active_sidebar( 'homepage-tweet' ) ) : ?>
+		<div id="secondary" class="widget-area home-twitter-feed" role="complementary">
+			<?php dynamic_sidebar( 'homepage-tweet' ); ?>
+			<a href="http://twitter.com" class="twitter-follow">Follow Us <span>&rsaquo;</span></a>
+		</div>
+<?php endif; ?>
 	</div>
 </section>
+
 <?php get_footer(); ?>

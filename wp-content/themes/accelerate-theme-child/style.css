@@ -41,9 +41,10 @@ ul#menu-top-nav li {
     line-height: 0;
     visibility: hidden;
 }
-/* home page most recent blog */
+/* home page most recent posts */
 .blog-post {
-	width: 50%;
+	width: 45%;
+	float:left;
 }
 .blog-post h4 {
 	font-size: 16px;
@@ -64,6 +65,52 @@ ul#menu-top-nav li {
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+/* twitter recent tweet */
+.home-twitter-feed {
+	float:right;
+	width:45%;
+}
+aside#pi_simpletwittertweets-2 {
+	padding: 0 0;
+}
+#pi_simpletwittertweets-2 h3 {
+	color: #a6a6a6;
+	font-weight: 700;
+    margin: 36px 0 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#pi_simpletwittertweets-2 h3::after { 
+    content: "@Accelerate";
+ 	display: block;
+    color:#3b3b3b;
+    margin-top:36px;
+    text-transform: none;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+ul.tweets {
+	list-style-type: none;
+	margin-left:0px;
+}
+.tweets li {
+	color: #3b3b3b;
+    font: 17px/1.65 'open sans', Arial, sans-serif;
+}
+.tweets li em{
+	display:none;
+}
+a.twitter-follow {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
 /* home page featured work */
 
 .featured-work h4 {
@@ -81,6 +128,25 @@ ul#menu-top-nav li {
 	text-align: center;
 	margin-top:20px;
 }
+
+/* home page featured work */
+
+.our-services h4 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom:30px;
+}
+.homepage-our-services li {
+	list-style-type: none;
+	width:25%;
+	float:left;
+	margin-bottom: 50px;
+}
+.homepage-our-services h5 {
+	text-align: center;
+	margin-top:20px;
+}
+
 /* case study page */
 aside.case-study-sidebar {
 	float:left;
@@ -137,4 +203,83 @@ aside.case-study-sidebar {
 	background: #45ac9d;
 	color:white;
 	padding: 15px 75px;
+}
+/* About page */
+.about-page {
+    background: url("img/about-hero.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+.about-page-hero {
+	text-align: center;
+	color:white;
+	padding: 70px 25%;
+	font-size: 22px;
+	}
+.about-page-hero a {
+	color: #45ac9d;
+}	
+.about-header {
+	text-align:center;
+	margin-bottom:40px;
+}
+ul.about-our-services {
+	margin:0;
+}
+.about-our-services li {
+	list-style-type: none;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.about-our-services h4 {
+	margin-top:10px;
+	display:inline-block;
+}
+.service-img-right img{
+	float: right;
+	margin-left:30px;
+	margin-bottom:25px;
+}
+.service-img-left img {
+	float: left;
+	margin-right:30px;
+	margin-bottom:25px;
+}
+.about-footer {
+	margin: 50px 0;
+	text-align: center;
+	font-weight: bold;
+}
+.about-footer .button {
+	margin-left:30px;
+}
+/* 404 */
+
+.fourohfour-hero {
+	
+	text-align: center;
+	
+	
+	font-size: 22px;
+	
+	}
+.fourohfour-hero h2{
+	margin-bottom:50px;
+}
+/* blog sidebar*/
+.widget_mailchimp{
+	border-bottom: 1px solid #BFBFBF;
+	padding: 0;
+}
+.widget_mailchimp h3 {
+	font-size: 1.2em;
+}
+input.mailchimp_button {
+	background: #45ac9d;
+	color:white;
+	padding: 10px 40px;
+	font-size: 1.2em;
+}
+.blog-page .container {
+    width: 960px;
+    margin: auto;
+    padding: 0 10px
 }

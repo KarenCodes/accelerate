@@ -36,5 +36,37 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+    register_post_type( 'our_services',
+        array(
+            'labels' => array(
+                'name' => __( 'Our Services' ),
+                'singular_name' => __( 'Service' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'our-services' ),
+        )
+    );
 }
 add_action( 'init', 'create_custom_post_types' );
+//homepage tweet
+register_sidebar( array(
+    'name' =>__( 'Homepage tweet', 'homepage-tweet'),
+    'id' => 'homepage-tweet',
+    'description' => __( 'Appears on the static front page template, select Simple Twitter Tweets widget', 'homepage-tweet' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+//blog sidebar
+register_sidebar( array(
+    'name' =>__( 'Blog sidebar', 'blog-sidebar'),
+    'id' => 'blog-sidebar',
+    'description' => __( 'Appears on the blog', 'blog-sidebar' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+
