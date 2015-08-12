@@ -278,8 +278,14 @@ input.mailchimp_button {
 	padding: 10px 40px;
 	font-size: 1.2em;
 }
+/* fix single blog page */
 .blog-page .container {
     width: 960px;
     margin: auto;
     padding: 0 10px
+}
+/* social menu */
+ul#menu-social-media-nav li {
+	list-style-type: none;
+	display:inline;
 }
